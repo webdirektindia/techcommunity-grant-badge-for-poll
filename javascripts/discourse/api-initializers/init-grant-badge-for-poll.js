@@ -18,7 +18,7 @@ export default apiInitializer("0.8", (api) => {
             const { attrs, state } = this;
             var selectedBadgeId = 107;
             var badgeReason = "Votes for a poll";
-            return UserBadge.grant(selectedBadgeId, username, badgeReason).then(
+            return UserBadge.grant(selectedBadgeId, username, "").then(
                 (newBadge) => {
                     debugger;
                   this.userBadges.pushObject(newBadge);
