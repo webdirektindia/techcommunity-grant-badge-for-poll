@@ -11,7 +11,7 @@ export default apiInitializer("0.8", (api) => {
         return;
     }
     // Reopen the discourse-poll widget and override the _toggleOption method to grant the badge when User votes in the specified Poll.
-    api.reponeWidget('discourse-poll', {
+    api.reopenWidget('discourse-poll', {
         _toggleOption(option) {
             this._super(option);
             debugger;
